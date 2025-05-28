@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gizli Galeri</title>
+  <script>
+    const parola = prompt("Parolayı girin:");
+    if (parola !== "asd12345") {
+      document.body.innerHTML = "❌ Yanlış parola!";
+      throw new Error("Yanlış parola girildi.");
+    }
+  </script>
+</head>
+<body>
+  <h1>🔐 Gizli Galeri</h1>
+  <p>Hoş geldiniz! Aşağıdaki görseller size özel:</p>
+  <img src="resimler/resim1.jpg" width="300">
+  <img src="resimler/resim2.jpg" width="300">
+</body>
+</html>
